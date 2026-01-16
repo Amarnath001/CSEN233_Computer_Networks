@@ -1,0 +1,14 @@
+This is a test text file for file copying operations.
+It contains multiple lines of text to test the file copy functionality.
+
+Line 1: Testing file copy with functions
+Line 2: Testing file copy with system calls
+Line 3: This file will be used to test both approaches
+
+The file contains:
+- Multiple lines
+- Various characters
+- Numbers: 1234567890
+- Special characters: !@#$%^&*()
+
+End of test file.
