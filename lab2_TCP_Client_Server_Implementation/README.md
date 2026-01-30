@@ -27,13 +27,13 @@ Server listens on the given port. Place files you want to serve in the same dire
 
 The client saves the downloaded file in a **`downloads/`** folder under the current working directory (created automatically if it doesn’t exist). So when you run the client from the lab2 folder, the file is written as `downloads/sample_file.txt`. That keeps downloaded files separate so you can easily compare them to the server’s original (e.g. `diff sample_file.txt downloads/sample_file.txt`). Running `make clean` removes the `downloads/` folder and its contents.
 
-Use `127.0.0.1` when client and server run on the same machine. Use a classmate’s IP when they run the server on the same network.
+Use `127.0.0.1` when client and server run on the same machine. Use a different systems IP when they run the server on the same network.
 
 ```bash
 ./tcp_client <server_ip> <port> <filename>
 # Same machine:
 ./tcp_client 127.0.0.1 5000 sample_file.txt
-# Classmate’s server (same network):
+# Different server (same network):
 ./tcp_client 192.168.1.10 5000 sample_file.txt
 ```
 
