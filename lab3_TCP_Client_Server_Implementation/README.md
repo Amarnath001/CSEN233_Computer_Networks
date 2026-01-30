@@ -1,4 +1,4 @@
-# Lab 2: TCP Client–Server Implementation
+# Lab 3: TCP Client–Server Implementation
 
 ## Overview
 
