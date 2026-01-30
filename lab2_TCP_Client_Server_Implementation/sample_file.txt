@@ -1,0 +1,6 @@
+This is a sample file for TCP file transfer testing.
+Server will send this file when client requests "sample_file.txt".
+
+Line 2
+Line 3
+End of file.
