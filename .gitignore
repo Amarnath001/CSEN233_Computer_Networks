@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.o
+*.out
+*.exe
+
+# Test output files
+*_copy.txt
+*_copy.bin
+
+# Lab2 TCP file transfer downloads
+downloads/
