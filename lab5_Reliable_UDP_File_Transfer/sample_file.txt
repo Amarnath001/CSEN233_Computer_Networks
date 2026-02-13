@@ -1,0 +1,2 @@
+Hello, this is a sample file for testing the stop-and-wait rdt3.0 protocol over UDP.
+The file transfer should handle packet loss and bit errors correctly.

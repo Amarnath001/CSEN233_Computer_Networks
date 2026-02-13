@@ -8,4 +8,6 @@ This repository contains lab assignments for CSEN 233 Computer Networks class.
   - See [lab1_Basic_Linux_network_commands_c_programming_skills/](lab1_Basic_Linux_network_commands_c_programming_skills/) for details
 - **Lab 3**: TCP Client–Server Implementation (file transfer)
   - See [lab3_TCP_Client_Server_Implementation/](lab3_TCP_Client_Server_Implementation/) for details
+- **Lab 5**: Reliable UDP File Transfer (stop-and-wait rdt3.0)
+  - See [lab5_Reliable_UDP_File_Transfer/](lab5_Reliable_UDP_File_Transfer/) for details
 
