@@ -26,3 +26,7 @@
 
 # Lab2 TCP file transfer downloads
 downloads/
+
+# Lab7 build artifacts
+lab7_Link_State_Routing/ls_router
+lab7_Link_State_Routing/ls_router.dSYM/

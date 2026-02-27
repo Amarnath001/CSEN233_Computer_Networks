@@ -10,4 +10,6 @@ This repository contains lab assignments for CSEN 233 Computer Networks class.
   - See [lab3_TCP_Client_Server_Implementation/](lab3_TCP_Client_Server_Implementation/) for details
 - **Lab 5**: Reliable UDP File Transfer (stop-and-wait rdt3.0)
   - See [lab5_Reliable_UDP_File_Transfer/](lab5_Reliable_UDP_File_Transfer/) for details
+- **Lab 7**: Link-State Routing (Dijkstra) Simulation
+  - See [lab7_Link_State_Routing/](lab7_Link_State_Routing/) for details
 

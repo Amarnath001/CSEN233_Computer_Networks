@@ -98,6 +98,40 @@ For the provided samples:
   - Runs Dijkstra's algorithm with this router as the source and prints:
     - `New least-cost distances from router <myid>:` followed by the distance array.
 
+## Example Test: Make the 1–2 Link Expensive
+
+You can use this example to verify that the link-state algorithm and distance updates are working correctly.
+
+1. **Start all four routers** with the sample files (as above).
+2. Go to **router 1's terminal**. When it asks:
+
+   ```text
+   any changes? (neighbor_id new_cost):
+   ```
+
+3. Type:
+
+   ```text
+   2 10
+   ```
+
+   This changes link cost **1–2** from `1` → `10` (and all routers will learn it via UDP messages).
+
+4. After a few seconds, watch the `New least-cost distances` lines on each router.
+
+**Expected new distances** (after the update has propagated and each router has rerun Dijkstra):
+
+- **Router 0**: becomes `0 1 3 5`
+  - 0→2 now 3 (via direct 0–2, since 0–1–2 is now 1+10=11)
+  - 0→3 now 5 (via 0–2–3 = 3+2)
+- **Router 1**: becomes `1 0 4 6`
+  - 1→2 now 4 (via 1–0–2 = 1+3)
+  - 1→3 now 6 (via 1–0–2–3 = 1+3+2)
+- **Router 2**: becomes `3 4 0 2`
+- **Router 3**: becomes `5 6 2 0`
+
+If you see these changes in the printed distance arrays, then your Dijkstra implementation and cost-table updates are behaving as expected.
+
 ## Notes
 
 - All shared access to the `costs` matrix is synchronized using a mutex to avoid race conditions between threads.
